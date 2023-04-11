@@ -18,7 +18,7 @@ const Canvas = ({ originalArray, algorithmSteps, delay }) => {
 
         const iterate = () => {
             const { target, index } = algorithmSteps[i];
-            
+
             setTimeout(() => {
                 context.clearRect(0, 0, context.canvas.width, context.canvas.height);
                 target.forEach((elem, currentIndex) => {

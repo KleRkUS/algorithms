@@ -32,7 +32,7 @@ Flex.propTypes = {
     justifyContent: propTypes.oneOf(['flex-start', 'center', 'flex-end', 'space-around', 'space-between']),
     children: propTypes.node.isRequired,
     className: propTypes.string,
-    restProps: propTypes.arrayOf(propTypes.any)
+    restProps: propTypes.arrayOf(propTypes.any),
 };
 
 export default Flex;

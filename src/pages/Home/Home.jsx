@@ -1,12 +1,9 @@
-import { Text } from "components/Elements";
+import { Text } from 'components/Elements';
 
 const Home = () => (
-    <Text
-        type="heading"
-        size="large"
-    >
+    <Text type="heading" size="large">
         Home
     </Text>
-)
+);
 
 export default Home;

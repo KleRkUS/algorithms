@@ -1,7 +1,8 @@
 import propTypes from 'prop-types';
-import { memo, useEffect, useState, useCallback } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 import { Flex, Text } from 'components/Elements';
 
 import styles from './Sort.module.css';
@@ -14,27 +15,30 @@ const Sort = memo(({ algorithm }) => {
 
     const instructions = Symbol('instructions');
 
-    const getObservableInstance = useCallback((array) => {
-        const target = [...array];
+    const getObservableInstance = useCallback(
+        (array) => {
+            const target = [...array];
 
-        target[instructions] = [];
+            target[instructions] = [];
 
-        return new Proxy(target, {
-            set: (target, property, value) => {
-                const oldValue = target[property];
+            return new Proxy(target, {
+                set: (target, property, value) => {
+                    const oldValue = target[property];
 
-                target[property] = value;
-                target[instructions].push({
-                    index: Number(property),
-                    oldValue,
-                    value,
-                    target: [...target],
-                });
+                    target[property] = value;
+                    target[instructions].push({
+                        index: Number(property),
+                        oldValue,
+                        value,
+                        target: [...target],
+                    });
 
-                return true;
-            },
-        });
-    }, [instructions]);
+                    return true;
+                },
+            });
+        },
+        [instructions]
+    );
 
     useEffect(() => {
         const observableInstance = getObservableInstance(algorithm.array);
@@ -103,7 +107,7 @@ Sort.propTypes = {
         delay: propTypes.number,
         description: propTypes.string,
         mutableCode: propTypes.string,
-        immutableCode: propTypes.string
+        immutableCode: propTypes.string,
     }).isRequired,
 };
 

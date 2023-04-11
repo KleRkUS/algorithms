@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Algorithms live examples and code snippets for JavaScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repo is inspired by
+
+[Introduction to Algorithms, fourth edition](http://mitpress.mit.edu/9780262367509/introduction-to-algorithms/)
+Written by:
+- Thomas H. Cormen
+- Charles E. Leiserson
+- Ronald L. Rivest
+- Clifford Stein
+
+I made it just to remember what I learn so code only contains algorithms I already
+know. Repo will be replenished as I study this book
+
+## Running on your local hardware
+
+To run this application locally you only need to run
+1. `npm install`
+2. `npm start`
+3. Application is up and running on [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
@@ -8,26 +25,35 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload when you make changes.
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clean up the `build` folder in case of older builds.
+2. Builds the app for production to the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm run lint`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Checks if the code satisfies the ESLint requirements.
+This script can be also used with `:fix` postfix so errors and
+warnings will be fixed if it's possible.
+
+### `npm run prettify`
+
+Rewrites code with given `prettier` rules to increase code quality and uniformity.
+This script is always used before `git commit`.
+
+### `npm run prepare`
+
+Need to be used before first commit. Installs husky and set it's pre-commit git hook.
+
+### `npm run clean`
+
+Just clean up the `build` folder
 
 ### `npm run eject`
 
@@ -39,32 +65,5 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

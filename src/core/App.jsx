@@ -1,8 +1,7 @@
+import { Layout } from 'components';
 import { routes } from 'constants';
 import { Suspense } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import { Layout } from 'components';
 
 import { Fallback } from 'pages/Fallback';
 

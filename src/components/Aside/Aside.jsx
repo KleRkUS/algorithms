@@ -1,12 +1,12 @@
 import algorithms from 'algorithms';
 import { useCallback, useState } from 'react';
 
+import { Expander } from 'components/Elements';
+
 import { algorithmTypesReadable } from 'constants/algorithmTypesReadable';
 
-import { Expander } from 'components/Elements';
 import { MenuItem } from '../MenuItem';
-
-import styles from "./Aside.module.css";
+import styles from './Aside.module.css';
 
 const { aside } = styles;
 

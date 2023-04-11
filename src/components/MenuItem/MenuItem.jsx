@@ -1,26 +1,20 @@
 import propTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 
-import styles from './MenuItem.module.css';
-
 import { Flex, Text } from '../Elements';
+import styles from './MenuItem.module.css';
 
 const { item } = styles;
 
 const MenuItem = ({ id, type, name, onAddToCompare, isAdded }) => {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const onRedirect = () => {
         navigate(`/algorithms/${type}/${id}`);
-    }
+    };
 
-    return(
-        <Flex
-            alignItems="center"
-            justifyContent="space-between"
-            onClick={onRedirect}
-            className={item}
-        >
+    return (
+        <Flex alignItems="center" justifyContent="space-between" onClick={onRedirect} className={item}>
             <Text>{name}</Text>
             {/* <Flex alignItems="center">
                 <label htmlFor={`${name}-checkbox`}>
@@ -37,7 +31,7 @@ MenuItem.propTypes = {
     onAddToCompare: propTypes.func.isRequired,
     isAdded: propTypes.bool.isRequired,
     id: propTypes.string,
-    type: propTypes.string
+    type: propTypes.string,
 };
 
 export { MenuItem };

@@ -1,7 +1,5 @@
 import { Outlet } from 'react-router-dom';
 
-const Algorithms = () => (
-    <Outlet />
-);
+const Algorithms = () => <Outlet />;
 
 export default Algorithms;

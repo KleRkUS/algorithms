@@ -1,6 +1,7 @@
-import { Flex, Text } from 'components/Elements';
 import propTypes from 'prop-types';
 import { Fragment, useState } from 'react';
+
+import { Flex, Text } from 'components/Elements';
 
 import styles from './Expander.module.css';
 
@@ -22,9 +23,7 @@ const Expander = ({ label, items, render }) => {
             {isOpen && (
                 <Flex direction="column" alignItems="stretch">
                     {items.map(({ id, ...rest }) => (
-                        <Fragment key={id}>
-                            {render({ id, ...rest })}
-                        </Fragment>
+                        <Fragment key={id}>{render({ id, ...rest })}</Fragment>
                     ))}
                 </Flex>
             )}
@@ -34,10 +33,12 @@ const Expander = ({ label, items, render }) => {
 
 Expander.propTypes = {
     label: propTypes.string.isRequired,
-    items: propTypes.arrayOf(propTypes.shape({
-        name: propTypes.string
-    })).isRequired,
-    render: propTypes.func.isRequired
-}
+    items: propTypes.arrayOf(
+        propTypes.shape({
+            name: propTypes.string,
+        })
+    ).isRequired,
+    render: propTypes.func.isRequired,
+};
 
 export default Expander;
