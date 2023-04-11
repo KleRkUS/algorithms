@@ -2,6 +2,7 @@
   "name": "algorithms-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://klerkus.github.io/algorithms/",
   "dependencies": {
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
