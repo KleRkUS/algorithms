@@ -1,0 +1,36 @@
+{
+    "env": {
+        "browser": true,
+        "es2022": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "react-app",
+      "prettier"
+    ],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "root": true,
+    "rules": {
+        "array-callback-return": "warn",
+        "no-duplicate-imports": "error",
+        "no-self-compare": "warn",
+        "no-unreachable": "error",
+        "no-use-before-define": "error",
+        "block-scoped-var": "warn",
+        "camelcase": "error",
+        "eqeqeq": "warn"
+    },
+    "settings": {
+        "import/resolver": {
+          "alias": {
+            "extensions": [".js", ".jsx"],
+            "map": [
+              ["@", "."]
+            ]
+          }
+        }
+      }
+  }
+  

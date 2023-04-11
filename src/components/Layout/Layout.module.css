@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.content {
+    padding: 20px 10%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contentInternal {
+    margin-top: 80px;
+    width: auto;
+    max-width: 900px;
+}
+
+.link {
+    color: #414141;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: #111;
+}
+
+.activeLink {
+    color: #fff;
+    background-color: #414141;
+}
+
+.heading {
+    margin-bottom: 30px;
+}

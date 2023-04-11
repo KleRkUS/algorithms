@@ -1,0 +1,16 @@
+.ul {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.leftPart {
+    margin-right: 100px;
+}
+
+.rightPart {
+    width: 600px;
+}
+
+.codeSnippetHeading {
+    margin-top: 20px;
+}

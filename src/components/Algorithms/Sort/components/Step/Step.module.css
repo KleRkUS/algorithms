@@ -1,0 +1,36 @@
+.number {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-weight: 600;
+}
+
+.number > p {
+    padding: 10px;
+    margin: 0;
+}
+
+.updatedIndex {
+    background-color: green;
+    color: white;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.updatedIndex:hover {
+    opacity: 0;
+}
+
+.li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    user-select: none;
+}
+
+.update {
+    margin-left: 5px;
+}

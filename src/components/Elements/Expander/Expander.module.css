@@ -1,0 +1,14 @@
+.expanderButton {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.expanderContainer {
+    border: 1px solid #414141;
+}

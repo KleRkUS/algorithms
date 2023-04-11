@@ -1,0 +1,16 @@
+{
+    "tabWidth": 4,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "printWidth": 120,
+    "importOrder": [
+      "^components/(.*)$",
+      "^constants/(.*)$",
+      "^alghoritms/(.*)$",
+      "^pages/(.*)$",
+      "^core/(.*)$",
+      "^[./]"
+    ],
+    "importOrderSeparation": true, 
+    "importOrderSortSpecifiers": true 
+  }

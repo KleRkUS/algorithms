@@ -1,0 +1,34 @@
+.textCommon {
+    display: inline-block;
+    margin: 0;
+}
+
+.size-text-small {
+    font-size: 10px;
+}
+.size-text-meduim {
+    font-size: 14px;
+}
+.size-text-large {
+    font-size: 18px;
+}
+
+.size-heading-small {
+    font-size: 20px;
+}
+.size-heading-medium {
+    font-size: 28px;
+}
+.size-heading-large {
+    font-size: 32px;
+}
+
+.weight-light {
+    font-weight: 300;
+}
+.weight-regular {
+    font-weight: 400;
+}
+.weight-bold {
+    font-weight: 700;
+}
